@@ -1,0 +1,39 @@
+@startuml
+left to right direction 
+
+class User{
+- id:Integer
+- nombre:String
+- email:String
+--
++ registarUsuario()
++ crearIdUsuario()
+}
+
+class Product{
+- id:Integer
+- nombre:String
+- precioi:float
+--
++ Carrito()
++ consultar()
++ agregar()
++ calcular()
++ eliminar()
+}
+
+class Order{
+- user_id:Integer
+- product_id:Integer
+- order_date:Date
+- cantidad:Integer
+--
++ Carrito()
++ pago()
+}
+
+
+User --> Order : envia datos
+User --> Product : envia datos
+Product --> Order : extends
+@enduml

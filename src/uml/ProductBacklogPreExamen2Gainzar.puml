@@ -1,0 +1,18 @@
+@startgantt
+
+-- Product Backlog PreExamen 2 --
+-- Stprint 1: Fase I. Planeación --
+[Introducción y Objetivos Sprint 1] lasts 1 days 
+[Planteamiento del problema] lasts 2 days 
+[Alcance: Módulos] lasts 3 days
+[Review] lasts 1 days
+
+-- Stprint 2: Fase II. Análisis --
+[Levantamiento de Requisitos] lasts 1 days 
+[Análisis de Requisitos: Funcionales y No Funcionales] lasts 1 days
+[Diagramas UML] lasts 3 days
+[Review] lasts 1 days
+
+
+
+@endgantt

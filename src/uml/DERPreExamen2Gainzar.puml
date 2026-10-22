@@ -1,0 +1,31 @@
+@startuml
+
+entity "usuario" as usuario{
+    *id_user :INT <<PK>>
+    --
+    *nombre: VARCHAR(100)
+    *email: VARCHAR(100)
+}
+
+entity "producto" as producto{
+    *id_product: INT <<PK>>
+    --
+    *nombre: VARCHAR(100)
+    *precio: INT
+}
+
+entity "orden" as orden{
+    *id_orden: INT <<PK>>
+    --
+    *id_user: INT <<FK>>
+    *id_product: INT <<FK>>
+    *fecha: DATE
+}
+
+
+'Relaciones
+orden ||--|{ usuario: "Contiene (1:N)"
+orden ||--|{ producto: "Tiene (1:N)"
+usuario ||--|{ producto: "Usa (1:N)"
+
+@enduml
